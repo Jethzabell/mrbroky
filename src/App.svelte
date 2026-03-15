@@ -53,24 +53,24 @@
 </script>
 
 <div class="gradient-bg">
-  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
-    <div class="glass-card w-full max-w-md p-8 flex flex-col items-center gap-6 fade-in">
+  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-6">
+    <div class="glass-card w-full max-w-md px-5 py-5 flex flex-col items-center gap-3 fade-in">
 
-      <!-- Avatar -->
-      <div class="avatar-glow">
-        <div class="w-20 h-20 rounded-full overflow-hidden ring-2 ring-white/20">
-          <img src={`${import.meta.env.BASE_URL}broki.png`} alt="Mr Broky" class="w-full h-full object-cover" />
+      <!-- Avatar + Name -->
+      <div class="flex flex-col items-center gap-2">
+        <div class="avatar-glow">
+          <div class="w-16 h-16 rounded-full overflow-hidden ring-2 ring-white/20">
+            <img src={`${import.meta.env.BASE_URL}broki.png`} alt="Mr Broky" class="w-full h-full object-cover" />
+          </div>
+        </div>
+        <div class="text-center">
+          <h1 class="text-xl font-bold gradient-text leading-tight">Mr Broky</h1>
+          <p class="text-white/50 text-xs tracking-wide">Just a guy with a dream.</p>
         </div>
       </div>
 
-      <!-- Name & Tagline -->
-      <div class="text-center">
-        <h1 class="text-3xl font-bold gradient-text">Mr Broky</h1>
-        <p class="text-white/60 mt-1 text-sm tracking-wide">Just a guy with a dream.</p>
-      </div>
-
       <!-- Social Links -->
-      <div class="w-full flex flex-col gap-3">
+      <div class="w-full flex flex-col gap-2">
         {#each links as link, i}
           <a
             href={link.url}
@@ -96,8 +96,8 @@
 
       <!-- Support -->
       <div class="w-full pt-2 border-t border-white/10">
-        <p class="text-white/40 text-xs uppercase tracking-widest mb-3 text-center">Support</p>
-        <div class="flex flex-col gap-3">
+        <p class="text-white/40 text-[10px] uppercase tracking-widest mb-2 text-center">Support</p>
+        <div class="flex flex-col gap-2">
           <a
             href={paypal}
             target="_blank"
@@ -126,7 +126,7 @@
       </div>
 
       <!-- Footer -->
-      <footer class="pt-4 text-center flex flex-col gap-1">
+      <footer class="pt-2 text-center flex flex-col gap-0.5">
         <p class="text-white/30 text-xs">
           &copy; {currentYear} MrBroky &mdash; All rights reserved
         </p>
@@ -222,15 +222,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
+    gap: 0.6rem;
     width: 100%;
-    padding: 0.8rem 1.25rem;
-    border-radius: 0.75rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.6rem;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.08);
     color: rgba(255, 255, 255, 0.85);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.875rem;
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
