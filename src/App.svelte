@@ -58,8 +58,8 @@
 
       <!-- Avatar -->
       <div class="avatar-glow">
-        <div class="w-28 h-28 rounded-full overflow-hidden ring-2 ring-white/20">
-          <img src="/broki.png" alt="Mr Broky" class="w-full h-full object-cover" />
+        <div class="w-20 h-20 rounded-full overflow-hidden ring-2 ring-white/20">
+          <img src={`${import.meta.env.BASE_URL}broki.png`} alt="Mr Broky" class="w-full h-full object-cover" />
         </div>
       </div>
 
